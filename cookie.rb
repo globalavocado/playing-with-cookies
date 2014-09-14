@@ -21,16 +21,22 @@ enable :sessions
   redirect '/'
   end
 
-get '/bye' do
-  session["user"] = nil
-  erb :bye
-end
-
 # this is the get request that goes to /still
 get '/still' do
 player = params[:player]
   erb :still
-end  
+end 
+
+# this is the get request that goes to /still_here
+get '/still_here' do
+player = params[:player]
+  erb :still_here
+end 
+
+get '/bye' do
+  session["user"] = nil
+  erb :bye
+end
 
 
   # start the server if ruby file executed directly

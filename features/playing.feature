@@ -18,3 +18,10 @@ Feature: Playing
 		Given I am registered to play
 		When I click on "click here to keep playing"
 		Then my name should appear on the next page
+
+		Scenario: A player can pass on their name from the second to the third page
+		Given I am registered to play
+		And I click on "click here to keep playing"
+		And my name should appear on the next page
+		When I click on "click here to carry on"
+		Then my name should appear on the third page

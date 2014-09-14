@@ -32,3 +32,12 @@ Then(/^my name should appear on the next page$/) do
 	visit '/still'
 	expect(page).to have_content("Kevin")
 end
+
+When(/^I click on "click here to carry on"$/) do
+	click_button ('click here to carry on')
+end
+
+Then(/^my name should appear on the third page$/) do
+	visit '/still'
+	expect(page).to have_content("Kevin")
+end
