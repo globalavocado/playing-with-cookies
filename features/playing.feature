@@ -13,3 +13,8 @@ Feature: Playing
 		Given I am registered to play
 		When I click on "click here to remove your name"
 		Then my name should be removed
+
+		Scenario: A player can pass their name on to a second page
+		Given I am registered to play
+		When I click on "click here to keep playing"
+		Then my name should appear on the next page

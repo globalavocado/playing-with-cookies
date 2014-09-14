@@ -23,3 +23,12 @@ end
 Then(/^my name should be removed$/) do
 	expect(page).to have_content("Bye bye, your name has been removed!")
 end
+
+When(/^I click on "click here to keep playing"$/) do
+	click_button ('click here to keep playing')
+end
+
+Then(/^my name should appear on the next page$/) do
+	visit '/still'
+	expect(page).to have_content("Kevin")
+end
