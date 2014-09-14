@@ -1,10 +1,7 @@
-<html>
-<body>
-	<h1>Gosh, still here <%= session['user']%>?</h1>
+<h1>Now might be a good time to leave, <%= session['user']%>.</h1>
+	
 	<h2>(on the third page)</h2>
 
 	<form action="/bye" method="get">
-	  <input type='submit' value='click here to exit'>
+	  <input type='submit' value='exit'>
 	</form>
-</body>
-</html>

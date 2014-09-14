@@ -1,10 +1,11 @@
-<html>
-<body>
-	<h1>And here you still are, <%= session['user']%>!</h1>
+<h1>And yet here you still are, <%= session['user']%>!</h1>
 	<h2>(on the second page)</h2>
 
 	<form action="/still_here" method="get">
-	  <input type='submit' value='click here to carry on'>
+		<input type='submit' value='carry on'>
 	</form>
-</body>
-</html>
+
+	<form action="/bye" method="get">
+	 	<input type='submit' value='leave immediately'>
+	 </form>
+	

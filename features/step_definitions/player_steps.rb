@@ -4,8 +4,8 @@ Given(/^I am registered to play$/) do
   click_button "new game"
 end
 
-When(/^I click on "click here to register your name"$/) do
-	click_button('click here to register your name')
+When(/^I click on "register your name"$/) do
+	click_button('register your name')
 end
 
 When(/^be on the intro page$/) do
@@ -16,16 +16,16 @@ Then(/^I should be able to enter my name$/) do
 	 expect(page).to have_button("new game")
 end
 
-When(/^I click on "click here to remove your name"$/) do
-	click_button ('click here to remove your name')
+When(/^I click on "remove your name"$/) do
+	click_button ('remove your name')
 end
 
 Then(/^my name should be removed$/) do
 	expect(page).to have_content("Bye bye, your name has been removed!")
 end
 
-When(/^I click on "click here to keep playing"$/) do
-	click_button ('click here to keep playing')
+When(/^I click on "keep playing"$/) do
+	click_button ('keep playing')
 end
 
 Then(/^my name should appear on the next page$/) do
@@ -33,8 +33,8 @@ Then(/^my name should appear on the next page$/) do
 	expect(page).to have_content("Kevin")
 end
 
-When(/^I click on "click here to carry on"$/) do
-	click_button ('click here to carry on')
+When(/^I click on "carry on"$/) do
+	click_button ('carry on')
 end
 
 Then(/^my name should appear on the third page$/) do
