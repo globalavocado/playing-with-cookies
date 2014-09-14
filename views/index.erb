@@ -1,10 +1,14 @@
 <html>
 <body>
-	<h1><%= session['user']%> Rocks!!!!!</h1>
+	<h1>...<%= session['user']%> Rocks!!!!!</h1>
 
 	<form action="/intro" method="get">
 	  <input type='submit' value='click here to register your name'>
 	</form>
+
+	<form action="/still" method="get">
+	  <input type='submit' value='click here to keep playing'>
+	 </form>
 
 	<form action="/bye" method="get">
 	  <input type='submit' value='click here to remove your name'>

@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 gem 'sinatra'
 gem 'shotgun'
-gem 'rack-flash3'
-gem 'byebug'
+
+
+group :development, :test do
+	gem 'rspec'
+	gem 'database_cleaner'
+	gem 'capybara'
+	gem 'launchy'
+end
